@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Militaria.Domain/Militaria.Domain.csproj" />
+    <Project Path="src/Militaria.Web/Militaria.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Militaria.Domain.Tests/Militaria.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
