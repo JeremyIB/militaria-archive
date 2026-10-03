@@ -608,29 +608,31 @@ A task is done only when all of these hold:
 
 ### Week 1 acceptance checklist — Must
 
-- [ ] **AC-1** (R-0.1, R-0.2) `dotnet --version` prints 10.0.x and `gh auth status` shows logged in.
-- [ ] **AC-2** (R-1.1) The repo URL opens in a private browser window while logged out.
-- [ ] **AC-3** (R-1.3, R-1.4) `LICENSE`, `.gitignore`, `.gitattributes`, `.editorconfig`, `global.json` are on `main`.
-- [ ] **AC-4** (R-1.5) Every commit on `main` shows your avatar on GitHub; no personal email appears in `git log --format=%ae`.
-- [ ] **AC-5** (R-2.1, R-2.2) The solution contains exactly three projects; `Militaria.Domain.csproj` has no `PackageReference` or `ProjectReference`.
-- [ ] **AC-6** (R-2.6, R-2.7) No `.csproj` contains `TargetFramework`, `Nullable` or a `Version=` attribute.
-- [ ] **AC-7** (R-2.9) `dotnet build -c Release` on a fresh clone: 0 warnings, 0 errors.
-- [ ] **AC-8** (R-2.8, R-2.10) With the app running, the home page loads and `/health` returns 200 `Healthy`.
-- [ ] **AC-9** (R-3.1–R-3.4) `dotnet test` reports 1 passed, 0 failed; the test is `ItemVisibility_Default_IsPrivate`.
-- [ ] **AC-10** (R-4.1–R-4.9) The latest `main` commit shows a green `build-test` check that finished in under 5 minutes, with a `test-results` artifact attached.
-- [ ] **AC-11** (R-5.1–R-5.5) The README shows a passing badge, the pitch, the nine screens and the four milestones; its "Run locally" commands work on a fresh clone.
-- [ ] **AC-12** Dev log has the week-1 entry and a "Next sitting" note naming the first week-2 task.
+Walked 2026-10-02 (task 8.1): all 20 items met. Evidence is in `docs/dev-log.md`, week 1 sitting 2.
+
+- [x] **AC-1** (R-0.1, R-0.2) `dotnet --version` prints 10.0.x and `gh auth status` shows logged in.
+- [x] **AC-2** (R-1.1) The repo URL opens in a private browser window while logged out.
+- [x] **AC-3** (R-1.3, R-1.4) `LICENSE`, `.gitignore`, `.gitattributes`, `.editorconfig`, `global.json` are on `main`.
+- [x] **AC-4** (R-1.5) Every commit on `main` shows your avatar on GitHub; no personal email appears in `git log --format=%ae`.
+- [x] **AC-5** (R-2.1, R-2.2) The solution contains exactly three projects; `Militaria.Domain.csproj` has no `PackageReference` or `ProjectReference`.
+- [x] **AC-6** (R-2.6, R-2.7) No `.csproj` contains `TargetFramework`, `Nullable` or a `Version=` attribute.
+- [x] **AC-7** (R-2.9) `dotnet build -c Release` on a fresh clone: 0 warnings, 0 errors.
+- [x] **AC-8** (R-2.8, R-2.10) With the app running, the home page loads and `/health` returns 200 `Healthy`.
+- [x] **AC-9** (R-3.1–R-3.4) `dotnet test` reports 1 passed, 0 failed; the test is `ItemVisibility_Default_IsPrivate`.
+- [x] **AC-10** (R-4.1–R-4.9) The latest `main` commit shows a green `build-test` check that finished in under 5 minutes, with a `test-results` artifact attached.
+- [x] **AC-11** (R-5.1–R-5.5) The README shows a passing badge, the pitch, the nine screens and the four milestones; its "Run locally" commands work on a fresh clone.
+- [x] **AC-12** Dev log has the week-1 entry and a "Next sitting" note naming the first week-2 task.
 
 ### Week 1 acceptance checklist — Should and Could
 
-- [ ] **AC-13** (R-0.5) `docker run hello-world` succeeds.
-- [ ] **AC-14** (R-1.2, R-1.6) Description and topics show on the repo page; push protection is on.
-- [ ] **AC-15** (R-4.10) A red run exists on a deleted throwaway branch, proving a failing test fails CI.
-- [ ] **AC-16** (R-6.1, R-6.2) `docs/adr/0000-template.md` and `0001-target-dotnet-10-lts.md` exist; 0001 is Accepted.
-- [ ] **AC-17** (R-7.1, R-7.2) A direct push to `main` is rejected; merge options show squash only.
-- [ ] **AC-18** (R-7.3) Dependabot appears under Insights → Dependency graph → Dependabot with two ecosystems.
-- [ ] **AC-19** (R-8.1–R-8.3) Four milestones with due dates exist, and each week-2 task has an issue in M1.
-- [ ] **AC-20** (R-6.4, Could) Opening a new PR pre-fills the template.
+- [x] **AC-13** (R-0.5) `docker run hello-world` succeeds.
+- [x] **AC-14** (R-1.2, R-1.6) Description and topics show on the repo page; push protection is on.
+- [x] **AC-15** (R-4.10) A red run exists on a deleted throwaway branch, proving a failing test fails CI.
+- [x] **AC-16** (R-6.1, R-6.2) `docs/adr/0000-template.md` and `0001-target-dotnet-10-lts.md` exist; 0001 is Accepted.
+- [x] **AC-17** (R-7.1, R-7.2) A direct push to `main` is rejected; merge options show squash only.
+- [x] **AC-18** (R-7.3) Dependabot appears under Insights → Dependency graph → Dependabot with two ecosystems.
+- [x] **AC-19** (R-8.1–R-8.3) Four milestones with due dates exist, and each week-2 task has an issue in M1.
+- [x] **AC-20** (R-6.4, Could) Opening a new PR pre-fills the template.
 
 ### How to verify the fresh-clone items (AC-7, AC-11)
 
