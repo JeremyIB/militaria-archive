@@ -1,0 +1,32 @@
+version: 2
+updates:
+  # Versions live only in Directory.Packages.props (central package management).
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    # Labels and prefixes match the repo's taxonomy and Conventional Commits.
+    labels: [chore]
+    commit-message:
+      prefix: chore
+      include: scope
+    groups:
+      # Minor and patch updates ship together; a major update gets its own PR,
+      # so a breaking change can be held back without blocking the rest.
+      nuget-minor-patch:
+        patterns: ["*"]
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    labels: [ci]
+    commit-message:
+      prefix: ci
+      include: scope
+    groups:
+      actions:
+        patterns: ["*"]
