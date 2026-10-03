@@ -58,6 +58,7 @@ src/Militaria.Web/             Blazor UI and API endpoints
 tests/Militaria.Domain.Tests/  unit tests
 docs/adr/                      architecture decision records
 docs/dev-log.md                development log
+docs/planning/                 project plan and weekly specs
 .github/workflows/ci.yml       build and test on every push
 ```
 
